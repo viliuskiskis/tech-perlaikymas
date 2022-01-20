@@ -29,20 +29,10 @@ function App() {
 class TrainViewComponent extends React.Component {
   render() {
     return (
-      <div>
-        <TrainCardMoreRenderedComponent />
-        <CarriageListComponent />
-      </div>
-    );
-  }
-}
-
-class CarriageListComponent extends React.Component {
-  render() {
-    return (
       <div className="container p-4">
         <div className="container-fluid d-flex justify-content-center">
           <div className="row g-md-4">
+            <TrainCardMoreRenderedComponent />
             <CarriageCardRenderedComponent />
             <CarriageCardRenderedComponent />
             <CarriageCardRenderedComponent />
@@ -160,7 +150,7 @@ class TrainCardLessComponent extends React.Component {
 class TrainCardMoreComponent extends React.Component {
   render() {
     return (
-      <div className="col-md-3">
+      <div className="col-md-4">
         <div className="card text-center">
           <img src={this.props.ImgURL} className="card-img-top" alt={this.props.ImgAlt} />
           <div className="card-body">
